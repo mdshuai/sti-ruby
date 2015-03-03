@@ -1,9 +1,0 @@
-#!/bin/sh -e
-
-pushd ${HOME} >/dev/null
-
-if [ -d ./bundle/ruby -a -f ./Gemfile.lock ]; then
-  tar cf - ./bundle/ruby ./Gemfile.lock
-fi
-
-popd >/dev/null
